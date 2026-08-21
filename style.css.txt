@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    /* সাইটের সেইম গ্রেডিয়েন্ট ব্যাকগ্রাউন্ড */
+    background: linear-gradient(135deg, #a3b86c 0%, #f6c845 50%, #e29330 100%);
+    min-height: 100vh;
+    color: #fff;
+}
+
+/* নেভবার */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* সাব ব্যানার টেক্সট */
+.sub-banner {
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+/* মেইন কন্টেইনার */
+.main-container {
+    text-align: center;
+    padding: 10px 20px 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* ওয়ার্ল্ড ম্যাপ ইমেজ স্টাইল */
+.map-container {
+    margin-bottom: 20px;
+}
+
+.world-map {
+    width: 120px;
+    height: auto;
+    filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.3));
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    letter-spacing: 0.8px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+/* ফ্ল্যাগ গ্রিড */
+.flag-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 12px;
+    justify-content: center;
+}
+
+/* ফ্ল্যাগ কার্ড */
+.flag-card {
+    background: #ffffff;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255,255,255,0.6);
+}
+
+.flag-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.flag-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
