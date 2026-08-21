@@ -39,48 +39,63 @@
 
         <!-- পতাকার গ্রিড -->
         <div class="flag-grid">
-            <!-- পর্তুগালে ক্লিক করলে সরাসরি পিডিএফ ওপেন হবে (কোনো কোড চাইবে না) -->
-            <div class="flag-card" onclick="window.open('UJJOL AHMED.pdf', '_blank')"><img alt="Portugal Flag" src="https://worldwide2.github.io/CHECKPERMIT/8.png"></div>
+            <!-- পর্তুগাল পতাকা: ক্লিক করলে কোড (RR66) চাইবে এবং সঠিক কোড দিলে UJJOL AHMED.pdf ওপেন হবে -->
+            <div class="flag-card" onclick="askPortugalPin()"><img alt="Portugal Flag" src="https://worldwide2.github.io/CHECKPERMIT/8.png"></div>
 
-            <!-- অন্যান্য দেশগুলোতে ক্লিক করলে কিছু হবে না -->
-            <div class="flag-card"><img alt="USA Flag" src="https://worldwide2.github.io/CHECKPERMIT/3.png"></div>
-            <div class="flag-card"><img alt="Canada Flag" src="https://worldwide2.github.io/CHECKPERMIT/2.jpeg"></div>
-            <div class="flag-card"><img alt="cy Flag" src="https://worldwide2.github.io/CHECKPERMIT/cy.png"></div>
-            <div class="flag-card"><img alt="germany Flag" src="https://worldwide2.github.io/CHECKPERMIT/7.png"></div>
-            <div class="flag-card"><img alt="italy Flag" src="https://worldwide2.github.io/CHECKPERMIT/italy.png"></div>
-            <div class="flag-card"><img alt="moldo Flag" src="https://worldwide2.github.io/CHECKPERMIT/ml8.png"></div>
-            <div class="flag-card"><img alt="RUSS Flag" src="https://worldwide2.github.io/CHECKPERMIT/R4.png"></div>
-            <div class="flag-card"><img alt="Australia Flag" src="https://worldwide2.github.io/CHECKPERMIT/1.png"></div>
-            <div class="flag-card"><img alt="SPAIN Flag" src="https://worldwide2.github.io/CHECKPERMIT/s2.png"></div>
-            <div class="flag-card"><img alt="Serbia Flag" src="https://worldwide2.github.io/CHECKPERMIT/17.png"></div>
-            <div class="flag-card"><img alt="UK Flag" src="https://worldwide2.github.io/CHECKPERMIT/14.png"></div>
-            <div class="flag-card"><img alt="AZAR" src="https://worldwide2.github.io/CHECKPERMIT/AZAR.png"></div>
-            <div class="flag-card"><img alt="NEW ZEALAND Flag" src="https://worldwide2.github.io/CHECKPERMIT/NE3.png"></div>
-            <div class="flag-card"><img alt="Greece Flag" src="https://worldwide2.github.io/CHECKPERMIT/16.png"></div>
-            <div class="flag-card"><img alt="Austria Flag" src="https://worldwide2.github.io/CHECKPERMIT/18.png"></div>
-            <div class="flag-card"><img alt="Albania Flag" src="https://worldwide2.github.io/CHECKPERMIT/21.png"></div>
-            <div class="flag-card"><img alt="france Flag" src="https://worldwide2.github.io/CHECKPERMIT/82.png"></div>
-            <div class="flag-card"><img alt="HUNFlag" src="https://worldwide2.github.io/CHECKPERMIT/87.png"></div>
-            <div class="flag-card"><img alt="FINFlag" src="https://worldwide2.github.io/CHECKPERMIT/FINLAND.png"></div>
-            <div class="flag-card"><img alt="SWITZERLAND Flag" src="https://worldwide2.github.io/CHECKPERMIT/SWIT.png"></div>
-            <div class="flag-card"><img alt="Croatia Flag" src="https://worldwide2.github.io/CHECKPERMIT/91.png"></div>
-            <div class="flag-card"><img alt="Denmark Flag" src="https://worldwide2.github.io/CHECKPERMIT/dn.png"></div>
-            <div class="flag-card"><img alt="POLSKA Flag" src="https://worldwide2.github.io/CHECKPERMIT/P4.png"></div>
-            <div class="flag-card"><img alt="NORFlag" src="https://worldwide2.github.io/CHECKPERMIT/NOR6.png"></div>
-            <div class="flag-card"><img alt="KOS Flag" src="https://worldwide2.github.io/CHECKPERMIT/KOSOVO.png"></div>
-            <div class="flag-card"><img alt="BELAFlag" src="https://worldwide2.github.io/CHECKPERMIT/BL.png"></div>
-            <div class="flag-card"><img alt="IREFlag" src="https://worldwide2.github.io/CHECKPERMIT/1W.png"></div>
-            <div class="flag-card"><img alt="MOROCCO Flag" src="https://worldwide2.github.io/CHECKPERMIT/m1.png"></div>
-            <div class="flag-card"><img alt="bosnia Flag" src="https://worldwide2.github.io/CHECKPERMIT/BOSNIA.png"></div>
-            <div class="flag-card"><img alt="FIJI Flag" src="https://worldwide2.github.io/CHECKPERMIT/FIJI.png"></div>
-            <div class="flag-card"><img alt="NetherlandFlag" src="https://worldwide2.github.io/CHECKPERMIT/Flag_of_the_Netherlands.png"></div>
-            <div class="flag-card"><img alt="LITHUNIA FLAG" src="https://worldwide2.github.io/CHECKPERMIT/LITHUNIA%20FLAG.png"></div>
-            <div class="flag-card"><img alt="Luxembourg Flag" src="https://worldwide2.github.io/CHECKPERMIT/69.png"></div>
-            <div class="flag-card"><img alt="MALTA Flag" src="https://worldwide2.github.io/CHECKPERMIT/M3.png"></div>
-            <div class="flag-card"><img alt="latviya Flag" src="https://worldwide2.github.io/CHECKPERMIT/lt.png"></div>
-            <div class="flag-card"><img alt="roFlag" src="https://worldwide2.github.io/CHECKPERMIT/ro.png"></div>
-            <div class="flag-card"><img alt="BULFlag" src="https://worldwide2.github.io/CHECKPERMIT/BU5.png"></div>
+            <!-- অন্যান্য দেশের পতাকা (এগুলোতে ক্লিক করলে সাধারণ মেসেজ দেখাবে) -->
+            <div class="flag-card" onclick="otherCountry()"><img alt="USA Flag" src="https://worldwide2.github.io/CHECKPERMIT/3.png"></div>
+            <div class="flag-card" onclick="otherCountry()"><img alt="Canada Flag" src="https://worldwide2.github.io/CHECKPERMIT/2.jpeg"></div>
+            <div class="flag-card" onclick="otherCountry()"><img alt="cy Flag" src="https://worldwide2.github.io/CHECKPERMIT/cy.png"></div>
+            <div class="flag-card" onclick="otherCountry()"><img alt="germany Flag" src="https://worldwide2.github.io/CHECKPERMIT/7.png"></div>
+            <div class="flag-card" onclick="otherCountry()"><img alt="italy Flag" src="https://worldwide2.github.io/CHECKPERMIT/italy.png"></div>
+            <div class="flag-card" onclick="otherCountry()"><img alt="moldo Flag" src="https://worldwide2.github.io/CHECKPERMIT/ml8.png"></div>
+            <div class="flag-card" onclick="otherCountry()"><img alt="RUSS Flag" src="https://worldwide2.github.io/CHECKPERMIT/R4.png"></div>
+            <div class="flag-card" onclick="otherCountry()"><img alt="Australia Flag" src="https://worldwide2.github.io/CHECKPERMIT/1.png"></div>
+            <div class="flag-card" onclick="otherCountry()"><img alt="SPAIN Flag" src="https://worldwide2.github.io/CHECKPERMIT/s2.png"></div>
+            <div class="flag-card" onclick="otherCountry()"><img alt="Serbia Flag" src="https://worldwide2.github.io/CHECKPERMIT/17.png"></div>
+            <div class="flag-card" onclick="otherCountry()"><img alt="UK Flag" src="https://worldwide2.github.io/CHECKPERMIT/14.png"></div>
+            <div class="flag-card" onclick="otherCountry()"><img alt="AZAR" src="https://worldwide2.github.io/CHECKPERMIT/AZAR.png"></div>
+            <div class="flag-card" onclick="otherCountry()"><img alt="NEW ZEALAND Flag" src="https://worldwide2.github.io/CHECKPERMIT/NE3.png"></div>
+            <div class="flag-card" onclick="otherCountry()"><img alt="Greece Flag" src="https://worldwide2.github.io/CHECKPERMIT/16.png"></div>
+            <div class="flag-card" onclick="otherCountry()"><img alt="Austria Flag" src="https://worldwide2.github.io/CHECKPERMIT/18.png"></div>
+            <div class="flag-card" onclick="otherCountry()"><img alt="Albania Flag" src="https://worldwide2.github.io/CHECKPERMIT/21.png"></div>
+            <div class="flag-card" onclick="otherCountry()"><img alt="france Flag" src="https://worldwide2.github.io/CHECKPERMIT/82.png"></div>
+            <div class="flag-card" onclick="otherCountry()"><img alt="HUNFlag" src="https://worldwide2.github.io/CHECKPERMIT/87.png"></div>
+            <div class="flag-card" onclick="otherCountry()"><img alt="FINFlag" src="https://worldwide2.github.io/CHECKPERMIT/FINLAND.png"></div>
+            <div class="flag-card" onclick="otherCountry()"><img alt="SWITZERLAND Flag" src="https://worldwide2.github.io/CHECKPERMIT/SWIT.png"></div>
+            <div class="flag-card" onclick="otherCountry()"><img alt="Croatia Flag" src="https://worldwide2.github.io/CHECKPERMIT/91.png"></div>
+            <div class="flag-card" onclick="otherCountry()"><img alt="Denmark Flag" src="https://worldwide2.github.io/CHECKPERMIT/dn.png"></div>
+            <div class="flag-card" onclick="otherCountry()"><img alt="POLSKA Flag" src="https://worldwide2.github.io/CHECKPERMIT/P4.png"></div>
+            <div class="flag-card" onclick="otherCountry()"><img alt="NORFlag" src="https://worldwide2.github.io/CHECKPERMIT/NOR6.png"></div>
+            <div class="flag-card" onclick="otherCountry()"><img alt="KOS Flag" src="https://worldwide2.github.io/CHECKPERMIT/KOSOVO.png"></div>
+            <div class="flag-card" onclick="otherCountry()"><img alt="BELAFlag" src="https://worldwide2.github.io/CHECKPERMIT/BL.png"></div>
+            <div class="flag-card" onclick="otherCountry()"><img alt="IREFlag" src="https://worldwide2.github.io/CHECKPERMIT/1W.png"></div>
+            <div class="flag-card" onclick="otherCountry()"><img alt="MOROCCO Flag" src="https://worldwide2.github.io/CHECKPERMIT/m1.png"></div>
+            <div class="flag-card" onclick="otherCountry()"><img alt="bosnia Flag" src="https://worldwide2.github.io/CHECKPERMIT/BOSNIA.png"></div>
+            <div class="flag-card" onclick="otherCountry()"><img alt="FIJI Flag" src="https://worldwide2.github.io/CHECKPERMIT/FIJI.png"></div>
+            <div class="flag-card" onclick="otherCountry()"><img alt="NetherlandFlag" src="https://worldwide2.github.io/CHECKPERMIT/Flag_of_the_Netherlands.png"></div>
+            <div class="flag-card" onclick="otherCountry()"><img alt="LITHUNIA FLAG" src="https://worldwide2.github.io/CHECKPERMIT/LITHUNIA%20FLAG.png"></div>
+            <div class="flag-card" onclick="otherCountry()"><img alt="Luxembourg Flag" src="https://worldwide2.github.io/CHECKPERMIT/69.png"></div>
+            <div class="flag-card" onclick="otherCountry()"><img alt="MALTA Flag" src="https://worldwide2.github.io/CHECKPERMIT/M3.png"></div>
+            <div class="flag-card" onclick="otherCountry()"><img alt="latviya Flag" src="https://worldwide2.github.io/CHECKPERMIT/lt.png"></div>
+            <div class="flag-card" onclick="otherCountry()"><img alt="roFlag" src="https://worldwide2.github.io/CHECKPERMIT/ro.png"></div>
+            <div class="flag-card" onclick="otherCountry()"><img alt="BULFlag" src="https://worldwide2.github.io/CHECKPERMIT/BU5.png"></div>
         </div>
     </div>
+
+    <script>
+        function askPortugalPin() {
+            let pass = prompt("Enter Secret Code (RR66) for Portugal:");
+            if (pass === "RR66") {
+                window.open('UJJOL AHMED.pdf', '_blank');
+            } else if (pass !== null) {
+                alert("Wrong Code! Access Denied.");
+            }
+        }
+
+        function otherCountry() {
+            alert("No offer letter available for this country right now.");
+        }
+    </script>
 </body>
 </html>
